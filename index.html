@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 11 - Language Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="card" id="wordCard">
+            <span id="wordText">слово</span>
+        </div>
+
+        <div class="nav-container">
+            <button id="prevBtn">&larr;</button>
+            <span id="stepIndicator">1/10</span>
+            <button id="nextBtn">&rarr;</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userAnswer" placeholder="Введіть переклад...">
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-group correct">
+                <span>Вірно</span>
+                <span id="correctCount">0</span>
+            </div>
+            <button id="statBtn">Статистика</button>
+            <div class="stat-group incorrect">
+                <span>Невірно</span>
+                <span id="incorrectCount">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Результати тестування</h2>
+            <p id="modalText"></p>
+            <button id="closeModal">Закрити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
